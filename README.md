@@ -23,3 +23,9 @@ pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with s
 6. check the web view again and adjust it until you've got result that you want to
 7. after you satisfy, deploy the site: cd output -> git add . -> git commit -m "msg" -> git push -u origin main
 8. and don't forget to backup: cd .. -> git add . -> git commit -m "msg" -> git push -u origin main
+
+## setting github
+pada folder output terdapat file .git yang berisi
+```bash
+.git > gitdir: ../.git/modules/output
+```
