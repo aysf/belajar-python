@@ -2,9 +2,9 @@
 Belajar python dasar, menengah, hingga mahir untuk data analysis, membangun website, membuat aplikasi
 
 
-# usefull command Pelican Development
+# Pelican Development
 
-## for deploying
+## some usefull command
 ```bash
 sudo lsof -i -P -n
 sudo fuser -k -n tcp 8000 
@@ -13,19 +13,34 @@ git submodule add path/to/git public_folder
 pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with selected theme
 
 ```
+## install steps
+1. create new env and activate it (optional)
+2. install pelican ```python -m pip install pelican```
+3. install markdown ```pip install markdown```
 
-## steps
+## deployment steps
 1. pelican-quickstart
 2. adding initial content
 3. split vertically your terminal
 4. run ```make devserver``` and check the web view
 5. on another pane, generate output with selected theme
 6. check the web view again and adjust it until you've got result that you want to
-7. after you satisfy, deploy the site: cd output -> git add . -> git commit -m "msg" -> git push -u origin main
-8. and don't forget to backup: cd .. -> git add . -> git commit -m "msg" -> git push -u origin main
+7. after you satisfy, deploy the site: cd output -> git add . -> git commit -m "msg" -> git push <del>-u origin main</del>
+8. and to backup: cd .. -> git add . -> git commit -m "msg" -> git push <del>-u origin main</del>
 
-## setting github
+## for updating content
+1. clone your backup repo that you've created from step 8 above
+2. cd your_backup_repo and run ```git submodule update --init --recursive```
+3. ensure that you have already installed the requirement in install steps process ```pip list```
+4. update your contents or edit your website
+5. repeate steps 3-8 above
+
+
+## additional note
 pada folder output terdapat file .git yang berisi
 ```bash
 .git > gitdir: ../.git/modules/output
 ```
+
+## references
+1. [how to update submodule](https://stackoverflow.com/questions/5542910/how-do-i-commit-changes-in-a-git-submodule)
