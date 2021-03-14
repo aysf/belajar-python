@@ -48,5 +48,7 @@ pada folder output terdapat file .git yang berisi
 
 ## references
 1. [how to update submodule](https://stackoverflow.com/questions/5542910/how-do-i-commit-changes-in-a-git-submodule)
+2. [list open files = lsof](https://en.wikipedia.org/wiki/Lsof)
+3. [fuser](https://en.wikipedia.org/wiki/Fuser_(Unix))
 
 
