@@ -35,6 +35,8 @@ pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with s
 4. update your contents or edit your website
 5. repeate steps 3-8 above
 
+## Problems
+1. HEAD detached [solution](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
 
 ## additional note
 pada folder output terdapat file .git yang berisi
@@ -44,3 +46,5 @@ pada folder output terdapat file .git yang berisi
 
 ## references
 1. [how to update submodule](https://stackoverflow.com/questions/5542910/how-do-i-commit-changes-in-a-git-submodule)
+
+
