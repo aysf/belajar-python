@@ -6,8 +6,6 @@ Belajar python dasar, menengah, hingga mahir untuk data analysis, membangun webs
 
 ## some usefull command
 ```bash
-sudo lsof -i -P -n
-sudo fuser -k -n tcp 8000 
 git rm -r --cached foldername
 git submodule add path/to/git public_folder
 pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with selected theme
@@ -36,7 +34,11 @@ pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with s
 5. repeate steps 3-8 above
 
 ## Problems
-1. HEAD detached [solution](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
+1. HEAD detached --> solution ```git checkout main ```    [source](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
+2. Port busy or unavailable --> solution (1) check active ports ```sudo lsof -i -P -n````    then (2) kill the port ```sudo fuser -k -n tcp 8000```
+
+
+ 
 
 ## additional note
 pada folder output terdapat file .git yang berisi
