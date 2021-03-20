@@ -36,6 +36,7 @@ pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with s
 ## Problems
 1. HEAD detached --> solution ```git checkout main ```    [source](https://stackoverflow.com/questions/10228760/how-do-i-fix-a-git-detached-head)
 2. Port busy or unavailable --> solution (1) check active ports ```sudo lsof -i -P -n```    then (2) kill the port ```sudo fuser -k -n tcp 8000```
+3. error ```fatal: in unpopulated submodule 'output' ``` --> create ```.git``` file in folder output then write ``` gitdir: ../.git/modules/output ``` and save the file
 
 
  
