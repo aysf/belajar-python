@@ -38,6 +38,7 @@ pelican content -s pelicanconf.py -t /path/to/your/theme #generate output with s
 2. Port busy or unavailable --> solution (1) check active ports ```sudo lsof -i -P -n```    then (2) kill the port ```sudo fuser -k -n tcp 8000```
 3. error ```fatal: in unpopulated submodule 'output' ``` --> create ```.git``` file in folder output then write ``` gitdir: ../.git/modules/output ``` and save the file
 4. submodule not update --> ``` git submodule foreach git pull origin master``` [source](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin)
+5. submodule not found. (1) cek submodule list with `git submodule--helper list` then (2) remove the submodule `git rm --cached nuzaweb-first-pelican` and now (3) you can update submodule by using `git submodule update --init --recursive`
 
 test auto6
 
